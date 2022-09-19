@@ -1,0 +1,18 @@
+Multichar_Symbols +ErgInstr +AccNH +AccH + Nom +Loc +Abl +Perl +Goal +Poss +Priv
+
+LEXICON Root
+;
+
+LEXICON Case
++ErgInstr:Au
++AccNH:0
++AccH:Ba
++Nom:0
++Loc:Ca
++Abl:Dam
++Perl:ngal
++Goal:gu
++Poss:ngunh
++Priv:rama
+
+END

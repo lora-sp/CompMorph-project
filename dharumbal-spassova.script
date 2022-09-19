@@ -1,0 +1,40 @@
+clear stack;
+
+define Vowel [a|i|u];
+define Cons [b|d|{dh}|g|k|l|m|n|{nh}|{ng}|p|r|{rr}|{rh}|t|{th}|w|y]; #doppelte rein oder raus
+
+#morpho-phonemics:
+define FinalL [l -> 0 || _ .#. r];
+
+#allomorphy: case
+#ErgInstr
+define ErgInstrRU [A -> r || [l|u] _];
+define ErgInstrNGU [A -> {ng} || i _]; #schreibweise richtig?
+define ErgInstrNGGU [A -> {ngg} || i _]; #schreibweise richtig?
+define ErgInstrDel [A -> 0 || {rr} _]; #schreibweise richtig?
+define ErgInstrB [A -> b || m _]; #voiced statt voiceless genommen wie der autor
+define ErgInstrD [A -> d || n _];
+define ErgInstrDH [A -> {dh} || {nh} _]; #schreibweise richtig?
+define ErgInstrG [A -> g || {ng} _]; #schreibweise richtig?
+#AccH
+define AccHN [B (->) n ];
+define AccHDel [B -> 0];
+#Loc
+define LocVowel [C -> {ng} || Vowel _]; #schreibweise richtig?
+define LocL [C -> r || l _]; 
+define LocDA [C -> d || [Cons - l]; #schreibweise richtig?
+#Abl
+define AblNG [D -> {ng} || Vowel]; #schreibweise richtig?
+define AblDel [D -> 0 || Cons]; 
+
+
+read regex FinalL;
+
+read lexc < dharumbal-lex-spassova.txt;
+
+compose net;
+
+apply down < dharumbal-upper-spassova.txt;
+apply up < dharumbal-lower-spassova.txt;
+
+#source dharumbal-spassova.script
