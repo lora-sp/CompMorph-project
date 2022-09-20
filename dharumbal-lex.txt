@@ -2,7 +2,7 @@ Multichar_Symbols +ErgInstr +AccNH +AccH + Nom +Loc +Abl +Perl +Goal +Poss +Priv
 
 LEXICON Root
 Nouns;
-Verbs;
+!Verbs;
 
 LEXICON Nouns
 gudali Case;

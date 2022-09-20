@@ -8,8 +8,8 @@ define FinalL [l -> 0 || _ .#. r];
 
 #Nouns: Case
 #ErgInstr
-define ErgInstrRU [A -> r || [l|u] _];
-define ErgInstrNGU [A -> n g || i _]; 
+define ErgInstrRU [A -> r || [l|u|a] _]; #auch bei stems ending in a (sagt die autorin aber nicht)
+define ErgInstrNGU [A (->) n g || i _]; 
 define ErgInstrNGGU [A -> n g g || i _]; 
 define ErgInstrDel [A -> 0 || r r _]; 
 define ErgInstrB [A -> b || m _]; #voiced statt voiceless genommen wie der autor

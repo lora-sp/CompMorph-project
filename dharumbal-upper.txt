@@ -1,5 +1,5 @@
 #ErgInstr
 gudali+ErgInstr
-gin.gi+ErgInstr
+gin.gil+ErgInstr
 dhina+ErgInstr
 gali+ErgInstr
