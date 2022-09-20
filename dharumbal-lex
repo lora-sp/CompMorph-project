@@ -1,7 +1,14 @@
 Multichar_Symbols +ErgInstr +AccNH +AccH + Nom +Loc +Abl +Perl +Goal +Poss +Priv
 
 LEXICON Root
-;
+Nouns;
+Verbs;
+
+LEXICON Nouns
+gudali Case;
+gin.gil Case;
+dhina Case;
+gali Case;
 
 LEXICON Case
 +ErgInstr:Au #;

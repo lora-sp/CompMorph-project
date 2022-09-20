@@ -1,7 +1,7 @@
 clear stack;
 
 define Vowel [a|i|u];
-define Cons [b|d|{dh}|g|k|l|m|n|{nh}|{ng}|p|r|{rr}|{rh}|t|{th}|w|y]; #doppelte rein oder raus
+define Cons [b|d|h|g|k|l|m|n|p|r|t|w|y]; #doppelte rein oder raus
 
 #morpho-phonemics:
 define FinalL [l -> 0 || _ .#. r];
@@ -9,32 +9,38 @@ define FinalL [l -> 0 || _ .#. r];
 #allomorphy: case
 #ErgInstr
 define ErgInstrRU [A -> r || [l|u] _];
-define ErgInstrNGU [A -> {ng} || i _]; #schreibweise richtig?
-define ErgInstrNGGU [A -> {ngg} || i _]; #schreibweise richtig?
-define ErgInstrDel [A -> 0 || {rr} _]; #schreibweise richtig?
+define ErgInstrNGU [A -> n g || i _]; #schreibweise richtig?
+define ErgInstrNGGU [A -> n g g || i _]; #schreibweise richtig?
+define ErgInstrDel [A -> 0 || r r _]; #schreibweise richtig?
 define ErgInstrB [A -> b || m _]; #voiced statt voiceless genommen wie der autor
 define ErgInstrD [A -> d || n _];
-define ErgInstrDH [A -> {dh} || {nh} _]; #schreibweise richtig?
-define ErgInstrG [A -> g || {ng} _]; #schreibweise richtig?
+define ErgInstrDH [A -> d h || n h _]; #schreibweise richtig?
+define ErgInstrG [A -> g || n g _]; #schreibweise richtig?
 #AccH
 define AccHN [B (->) n ];
 define AccHDel [B -> 0];
 #Loc
-define LocVowel [C -> {ng} || Vowel _]; #schreibweise richtig?
+define LocVowel [C -> n g || Vowel _]; #schreibweise richtig?
 define LocL [C -> r || l _]; 
 define LocDA [C -> d || [Cons - l]; #schreibweise richtig?
 #Abl
-define AblNG [D -> {ng} || Vowel]; #schreibweise richtig?
+define AblNG [D -> n g || Vowel]; #schreibweise richtig?
 define AblDel [D -> 0 || Cons]; 
 
 
-read regex FinalL;
+read regex FinalL .o. ErgInstrRU .o. ErgInstrNGU .o. ErgInstrNGGU 
+.o. ErgInstrDel .o. ErgInstrB .o. ErgInstrD .o. ErgInstrDH
+.o. ErgInstrG .o. AccHN .o. AccHDel .o. LocVowel .o. LocDA
+.o. AblNG .o. AblDel;
 
-read lexc < dharumbal-lex-spassova.txt;
+read lexc < dharumbal-lex.txt;
 
 compose net;
 
-apply down < dharumbal-upper-spassova.txt;
-apply up < dharumbal-lower-spassova.txt;
+apply down < dharumbal-upper.txt;
+apply up < dharumbal-lower.txt;
 
-#source dharumbal-spassova.script
+#source dharumbal.script
+
+
+#kasus hängt manchmal an adj -> nicht beachtet
