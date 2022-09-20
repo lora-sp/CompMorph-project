@@ -33,14 +33,14 @@ read regex FinalL .o. ErgInstrRU .o. ErgInstrNGU .o. ErgInstrNGGU
 .o. ErgInstrG .o. AccHN .o. AccHDel .o. LocVowel .o. LocDA
 .o. AblNG .o. AblDel;
 
-#read lexc < dharumbal-lex.txt;
+read lexc < dharumbal-lex.txt;
 
 compose net;
 
-#apply down < dharumbal-upper.txt;
+apply down < dharumbal-upper.txt;
 #apply up < dharumbal-lower.txt;
 
-apply up gin.gil;
+
 
 #source dharumbal-test.script
 #kasus hängt manchmal an adj -> nicht beachtet
