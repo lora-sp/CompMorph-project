@@ -1,14 +1,31 @@
 Multichar_Symbols +ErgInstr +AccNH +AccH + Nom +Loc +Abl +Perl +Goal +Poss +Priv
++Caus +L +Imper +Intr +Reci +Refl +NonPast +Past +FarPast +Purp
 
 LEXICON Root
 Nouns;
-!Verbs;
+Verbs;
 
 LEXICON Nouns
-gudali Case;
 gin.gil Case;
+baparru Case;
 dhina Case;
+gudali Case;
+gatharr Case;
+dadhim Case;
+gawun Case;
+dhalanh Case;
+binang Case;
+dhugurr Case;
+bina Case;
+guya Case;
 gali Case;
+dula Case;
+wi Case;
+walu Case;
+yarraman Case;
+ganumi Case;
+dhanggui Case;
+mirhi Case;
 
 LEXICON Case
 +ErgInstr:Au #;
@@ -20,6 +37,37 @@ LEXICON Case
 +Perl:ngal #;
 +Goal:gu #;
 +Poss:ngunh #;
-+Priv:rama #;
++Priv:Rama #;
+
+
+LEXICON Verbs
+Deriv;
+birra Deriv;
+
+LEXICON Deriv
+	ConjMarker;
++Caus:Ea ConjMarker;
++Intr:ngi ConjMarker;
++Refl:li ConjMarker;
++Reci:Fa ConjMarker;
+
+LEXICON ConjMarker
+	TenseMood;
++L:l TenseMood;
++Zero:0 TenseMood;
++RR:rr TenseMood;
++dha:l TenseMood;
++N:n TenseMood;
++M:m TenseMood;
++NG1:ng TenseMood;
++NG2:ng TenseMood;
+
+LEXICON TenseMood
++Imper:Ga #;
++NonPast:0 #;
++Past:i #;
++FarPast:Hun #;
++Purp:IJKLM #;
+
 
 END
