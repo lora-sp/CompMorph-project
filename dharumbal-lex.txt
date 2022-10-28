@@ -1,5 +1,6 @@
 Multichar_Symbols +ErgInstr +AccNH +AccH + Nom +Loc +Abl +Perl +Goal +Poss +Priv
-+Caus +L +Imper +Intr +Reci +Refl +NonPast +Past +FarPast +Purp
++Caus +Imper +Intr +Reci +Refl +NonPast +Past +FarPast +Purp +CJ
+
 
 LEXICON Root
 Nouns;
@@ -41,33 +42,82 @@ LEXICON Case
 
 
 LEXICON Verbs
-Deriv;
-birra Deriv;
+!bunda@U.conj.zero@ Deriv1;
+!dhakarr@U.conj.rr@ TenseMood;
+!birra@U.conj.l@ Deriv2;
+dha DhaClass;
+ma NClass;
+bu MClass;
+ga NG1Class;
+wu NG2Class;
 
-LEXICON Deriv
-	ConjMarker;
-+Caus:Ea ConjMarker;
-+Intr:ngi ConjMarker;
-+Refl:li ConjMarker;
-+Reci:Fa ConjMarker;
+LEXICON DhaClass
++Imper:ga #;
++CJ:l DhaTenseMood;
 
-LEXICON ConjMarker
-	TenseMood;
-+L:l TenseMood;
-+Zero:0 TenseMood;
-+RR:rr TenseMood;
-+dha:l TenseMood;
-+N:n TenseMood;
-+M:m TenseMood;
-+NG1:ng TenseMood;
-+NG2:ng TenseMood;
-
-LEXICON TenseMood
-+Imper:Ga #;
+LEXICON DhaTenseMood
 +NonPast:0 #;
 +Past:i #;
-+FarPast:Hun #;
-+Purp:IJKLM #;
++Imper:a #;
+
+LEXICON NClass
++CJ:n NTenseMood;
+
+LEXICON NTenseMood
++NonPast:0 #;
++Past:i #;
++Purp:gu #;
++Purp:dhayu #;
+
+LEXICON MClass
++CJ:m MTenseMood;
++NonPast:nh #;
+
+LEXICON MTenseMood
++Past:i #;
++Imper:a #;
+
+LEXICON NG1Class
++CJ:ng NG1TenseMood;
++NonPast:nh #;
++Purp:gu #; 		!hier evtl nur eine nehmen und rest auch überprüfen auf ähnlichkeit
++Purp:yu #;
++Purp:yayu #;
++Imper:ga #;
+
+LEXICON NG1TenseMood
++Past:i #;
++Imper:a #;
+
+LEXICON NG2Class
++CJ:ng NG2TenseMood;
++NonPast:nh #;
++Purp:thayu #;
++Imper:ka #;
+
+LEXICON NG2TenseMood
++Past:i #;
+
+!LEXICON Deriv
+!	ConjMarker;
+!+Caus:Ea ConjMarker;
+!+Intr:ngi ConjMarker;
+!+Refl:li ConjMarker;
+!+Reci:Fa ConjMarker;
+
+!LEXICON ConjMarker
+!TenseMood;
+
+!LEXICON TenseMood
+!+NonPast@R.conj.zero@@R.suffnum.one@nh #; !
+!+Past@R.suffnum.two@i #;
+!+Past@R.conj.zero@ngi #;
+!+FarPast:@R.conj.zero@yun #;
+!+FarPast:@R.conj.l@gun #;
+!+Purp@R.conj.zero@gu #;
+!+Purp@R.conj.zero@yi #;
+!+Imp@R.suffnum.zero@ #;
+!+Imp@R.suffnum.two@a #;
 
 
 END

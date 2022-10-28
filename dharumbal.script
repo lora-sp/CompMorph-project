@@ -1,7 +1,7 @@
 clear stack;
 
 define Vowel [a|i|u];
-define Cons [b|d|h|g|k|l|m|n|p|r|t|w|y]; #doppelte rein oder raus
+define Cons [b|d|h|g|k|l|m|n|p|r|t|w|y]; 
 
 
 #Nouns
@@ -55,11 +55,11 @@ read lexc < dharumbal-lex.txt;
 compose net;
 
 apply down < dharumbal-upper.txt;
-#apply up < dharumbal-lower.txt;
+apply up < dharumbal-lower.txt;
 
 
 
-#source dharumbal-test.script
+#source dharumbal.script
 #kasus hängt manchmal an adj -> nicht beachtet
 #erginstr: wenn was in klammern dann beide optionen
 #nominativ: vok. nicht stimmig zw. autorin und holmer -> weggelassen
@@ -70,3 +70,7 @@ apply down < dharumbal-upper.txt;
 
 #rule count: 17 für nouns
 
+#verbs:alles testen, nach TenseMood Endungen wenn alles implementiert
+#falsche daten in lower packen?
+#beispiele im Text
+#Flags beschreiben!!!!

@@ -1,3 +1,4 @@
+#Nouns
 #ErgInstr
 gin.gil+ErgInstr
 baparru+ErgInstr
@@ -47,5 +48,19 @@ mirhi+Poss
 gin.gil+Priv
 gali+Priv
 
-#Caus
-birra+Caus+L+Imper
+#Verbs
+#Closed Classes
+#DhaClass
+dha+CJ+Past
+
+#NClass
+ma+CJ+Purp
+
+#MClass
+bu+CJ+Imper
+
+#NG1Class
+ga+Purp
+
+#NG2Class
+wu+Imper
