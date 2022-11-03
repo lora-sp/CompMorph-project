@@ -64,3 +64,12 @@ ga+Purp
 
 #NG2Class
 wu+Imper
+
+#RRClass
+dhakarr+CJ+Past
+
+#LClass
+birra+Caus+CJ+Past
+
+#ZeroClass
+bunda+Reci+CJ+Past

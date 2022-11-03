@@ -36,8 +36,8 @@ define CausNGIGA [E (->) n g i g];
 define CausNHAGA [E (->) n h a g];
 define CausGA [E -> g];
 #Reciprocal
-define ReciBA [F (->) b a];
-define ReciLA [F (->) l a];
+define ReciBA [F (->) b];
+define ReciLA [F -> l];
 
 
 #morpho-phonemics:
@@ -48,14 +48,14 @@ read regex ErgInstrRU .o. ErgInstrNGU .o. ErgInstrNGGU
 .o. ErgInstrDel .o. ErgInstrB .o. ErgInstrD .o. ErgInstrDH
 .o. ErgInstrG .o. AccHN .o. AccHDel .o. LocVowel .o. LocDA .o. LocRA
 .o. AblNG .o. AblDel .o. CausNHDHA .o. CausNGGA .o. CausNGIGA
-.o. CausNHAGA .o. CausGA .o. FinalL .o. SuffR;
+.o. CausNHAGA .o. CausGA .o. ReciBA .o. ReciLA .o. FinalL .o. SuffR;
 
 read lexc < dharumbal-lex.txt;
 
 compose net;
 
 apply down < dharumbal-upper.txt;
-apply up < dharumbal-lower.txt;
+#apply up < dharumbal-lower.txt;
 
 
 
