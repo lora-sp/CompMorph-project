@@ -1,6 +1,7 @@
 Multichar_Symbols +ErgInstr +AccNH +AccH + Nom +Loc +Abl +Perl +Goal +Poss +Priv
 +Caus +Imper +Intr +Reci +Refl +NonPast +Past +FarPast +Purp +CJ
 @P.conj.rr@ @U.conj.rr@ @R.conj@ @P.conj.l@ @U.conj.l@ @P.conj.zero@ @U.conj.zero@
+@R.conj.zero@ @R.conj.l@ @R.conj.rr@
 
 LEXICON Root
 	Nouns;
@@ -42,37 +43,44 @@ LEXICON Case
 
 
 LEXICON Verbs
-bunda@P.conj.zero@	Deriv1;
-dhakarr@P.conj.rr@	ConjMarker;
-birra@P.conj.l@	Deriv2;
+bunda@P.conj.zero@	Deriv;
+dhakarr@P.conj.rr@	TenseMood;
+bungga@P.conj.l@	Deriv;
 dha	DhaClass;
 ma	NClass;
 bu	MClass;
 ga	NG1Class;
 wu	NG2Class;
 
-LEXICON Deriv1
+LEXICON Deriv
+	TenseMood;
 	ConjMarker;
-+Refl:li	ConjMarker;
-+Reci:Fa	ConjMarker;
-
-LEXICON Deriv2
-	ConjMarker;
-+Caus:Ea	ConjMarker;
-
-!LEXICON Deriv3
-!wa (burn)
++Caus@U.conj.zero@@P.conj.l@:Ea@U.conj.zero@@P.conj.l@	ConjMarker; 
+< "+Refl":li "@U.conj.l@""@P.conj.zero@" >	TenseMood;
++Reci@U.conj.l@@P.conj.zero@:Fa@U.conj.l@@P.conj.zero@	TenseMood; 
+< "+Imper":0 "@R.conj@" >	#;
 
 LEXICON ConjMarker
-< "+CJ":ng "@U.conj.zero@" >	TenseMood;
-< "+CJ":0 "@U.conj.rr@" >	TenseMood;
-< "+CJ":l "@U.conj.l@" >	TenseMood;
+!rr ist kein teil des suffix
+< "+CJ":l "@R.conj.l@" >	TenseMood;
 
 LEXICON TenseMood
-< "+Past":i "@R.conj@" >	#;
+< "+NonPast":nh "@R.conj.zero@" >	#;
+< "+NonPast":0 "@R.conj.rr@" >	#;
+< "+NonPast":0 "@R.conj.l@" >	#;
+< "+Past":ngi "@R.conj.zero@" >	#;
+< "+Past":i "@R.conj.l@" >	#;
+< "+Past":i "@R.conj.rr@" >	#;
+< "+FarPast":yun "@R.conj.zero@" >	#;
+< "+FarPast":gun "@R.conj.l@" >	#;
++Purp@R.conj.zero@:G@R.conj.zero@	#; 
+< "+Purp":u "@R.conj.rr@" >	#;
+< "+Purp":gu "@R.conj.l@" > #;
++Imper@R.conj.rr@:Ja@R.conj.rr@	#; 
+
 
 LEXICON DhaClass
-+Imper:ga	#;
++Imper:ga	#; ! keine Regel weil extra zustand
 +CJ:l	DhaTenseMood;
 
 LEXICON DhaTenseMood
@@ -86,9 +94,7 @@ LEXICON NClass
 LEXICON NTenseMood
 +NonPast:0	#;
 +Past:i	#;
-+Purp:gu	#;
-+Purp:dhayu	#;
-
++Purp:Hu	#;
 LEXICON MClass
 +CJ:m	MTenseMood;
 +NonPast:nh	#;
@@ -100,14 +106,11 @@ LEXICON MTenseMood
 LEXICON NG1Class
 +CJ:ng	NG1TenseMood;
 +NonPast:nh	#;
-+Purp:gu	#; 		!hier evtl nur eine nehmen und rest auch überprüfen auf ähnlichkeit
-+Purp:yu	#;
-+Purp:yayu	#;
-+Imper:ga	#;
++Purp:Iu	#; 
++Imper:Kga	#;
 
 LEXICON NG1TenseMood
 +Past:i	#;
-+Imper:a	#;
 
 LEXICON NG2Class
 +CJ:ng	NG2TenseMood;

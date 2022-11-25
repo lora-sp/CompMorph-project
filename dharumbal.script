@@ -38,6 +38,23 @@ define CausGA [E -> g];
 #Reciprocal
 define ReciBA [F (->) b];
 define ReciLA [F -> l];
+#Purposive (Zero Class)
+define PurpZGU [G (->) g u];
+define PurpZYI [G -> y i];
+#Tense/Mood Suffixes
+#Purposive (N Class)
+define PurpNGU [H (->) g];
+define PurpNDHAYU [H -> d h a y];
+#Purposive (NG1 Class)
+define PurpNG1GU [I (->) g];
+define PurpNG1YU [I (->) y];
+define PurpNG1YAYU [I -> y a y];
+#Imperative (RR Class)
+define ImpRRGA [J (->) g];
+define ImpRRA [J -> 0];
+#Imperative (NG1 Class)
+define ImpNG1NGA [K (->) n];
+define ImpNG1GA [K -> 0]; 
 
 
 #morpho-phonemics:
@@ -48,7 +65,10 @@ read regex ErgInstrRU .o. ErgInstrNGU .o. ErgInstrNGGU
 .o. ErgInstrDel .o. ErgInstrB .o. ErgInstrD .o. ErgInstrDH
 .o. ErgInstrG .o. AccHN .o. AccHDel .o. LocVowel .o. LocDA .o. LocRA
 .o. AblNG .o. AblDel .o. CausNHDHA .o. CausNGGA .o. CausNGIGA
-.o. CausNHAGA .o. CausGA .o. ReciBA .o. ReciLA .o. FinalL .o. SuffR;
+.o. CausNHAGA .o. CausGA .o. ReciBA .o. ReciLA
+.o. PurpZGU .o. PurpZYI .o. PurpNGU .o. PurpNDHAYU 
+.o. PurpNG1GU .o. PurpNG1YU .o. PurpNG1YAYU 
+.o. ImpRRGA .o. ImpRRA .o. ImpNG1NGA .o. ImpNG1GA .o. FinalL .o. SuffR;
 
 read lexc < dharumbal-lex.txt;
 
@@ -69,8 +89,10 @@ apply down < dharumbal-upper.txt;
 #1-2 Bsp pro Regel
 
 #rule count: 17 für nouns
+# 18 für verbs
 
-#verbs:alles testen, nach TenseMood Endungen wenn alles implementiert
-#falsche daten in lower packen?
 #beispiele im Text
-#Flags beschreiben!!!!
+#lower words	
+#tabulator
+#alle formen auch bei closed
+#überprüfen

@@ -49,9 +49,35 @@ gin.gil+Priv
 gali+Priv
 
 #Verbs
+#OpenClasses
+#ZeroClass
+bunda+NonPast
+bunda+Past
+bunda+Caus+CJ+Past
+bunda+FarPast
+bunda+Purp
+bunda+Imper
+
+#RRClass
+dhakarr+NonPast
+dhakarr+Past
+dhakarr+Purp
+dhakarr+Imper
+
+#LClass
+bungga+CJ+NonPast
+bungga+CJ+Past
+bungga+Reci+Past
+bungga+Refl+Past
+bungga+CJ+FarPast
+bungga+CJ+Purp
+bungga+Imper
+
 #Closed Classes
 #DhaClass
 dha+CJ+Past
+dha+CJ+Imper
+dha+Imper
 
 #NClass
 ma+CJ+Purp
@@ -61,15 +87,7 @@ bu+CJ+Imper
 
 #NG1Class
 ga+Purp
+ga+Imper
 
 #NG2Class
 wu+Imper
-
-#RRClass
-dhakarr+CJ+Past
-
-#LClass
-birra+Caus+CJ+Past
-
-#ZeroClass
-bunda+Reci+CJ+Past
