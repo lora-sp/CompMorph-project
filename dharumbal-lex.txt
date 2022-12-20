@@ -1,4 +1,4 @@
-Multichar_Symbols +ErgInstr +AccNH +AccH + Nom +Loc +Abl +Perl +Goal +Poss +Priv
+Multichar_Symbols +ErgInstr +AccNH +AccH +Nom +Loc +Abl +Perl +Goal +Poss +Priv
 +Caus +Imper +Intr +Reci +Refl +NonPast +Past +FarPast +Purp +CJ
 @P.conj.rr@ @U.conj.rr@ @R.conj@ @P.conj.l@ @U.conj.l@ @P.conj.zero@ @U.conj.zero@
 @R.conj.zero@ @R.conj.l@ @R.conj.rr@
@@ -56,7 +56,7 @@ LEXICON Deriv
 	TenseMood;
 	ConjMarker;
 +Caus@U.conj.zero@@P.conj.l@:Ea@U.conj.zero@@P.conj.l@	ConjMarker; 
-< "+Refl":li "@U.conj.l@""@P.conj.zero@" >	TenseMood;
+< "+Refl":li "@U.conj.l@" "@P.conj.zero@" >	TenseMood;
 +Reci@U.conj.l@@P.conj.zero@:Fa@U.conj.l@@P.conj.zero@	TenseMood; 
 < "+Imper":0 "@R.conj@" >	#;
 
@@ -80,7 +80,7 @@ LEXICON TenseMood
 
 
 LEXICON DhaClass
-+Imper:ga	#; ! keine Regel weil extra zustand
++Imper:ga	#;
 +CJ:l	DhaTenseMood;
 
 LEXICON DhaTenseMood
@@ -95,6 +95,8 @@ LEXICON NTenseMood
 +NonPast:0	#;
 +Past:i	#;
 +Purp:Hu	#;
++Imper:a 	#;
+
 LEXICON MClass
 +CJ:m	MTenseMood;
 +NonPast:nh	#;

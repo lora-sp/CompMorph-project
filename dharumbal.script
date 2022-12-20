@@ -7,11 +7,11 @@ define Cons [b|d|h|g|k|l|m|n|p|r|t|w|y];
 #Nouns
 #Case
 #ErgInstr
-define ErgInstrRU [A -> R || [l|u|a] _]; #auch bei stems ending in a (sagt die autorin aber nicht)
+define ErgInstrRU [A -> R || [l|u|a] _]; 
 define ErgInstrNGU [A (->) n g || i _]; 
 define ErgInstrNGGU [A -> n g g || i _]; 
 define ErgInstrDel [A -> 0 || r r _]; 
-define ErgInstrB [A -> b || m _]; #voiced statt voiceless genommen wie der autor
+define ErgInstrB [A -> b || m _]; 
 define ErgInstrD [A -> d || n _];
 define ErgInstrDH [A -> d h || n h _]; 
 define ErgInstrG [A -> g || n g _];
@@ -70,29 +70,22 @@ read regex ErgInstrRU .o. ErgInstrNGU .o. ErgInstrNGGU
 .o. PurpNG1GU .o. PurpNG1YU .o. PurpNG1YAYU 
 .o. ImpRRGA .o. ImpRRA .o. ImpNG1NGA .o. ImpNG1GA .o. FinalL .o. SuffR;
 
-read lexc < dharumbal-lex.txt;
+define Rules;
+
+#read lexc < dharumbal-lex.txt;
+read lexc < testlex.txt;
+define Nouns;
+read lexc < testlex2.txt;
+define Verbs;
+
+read regex Rules;
+read regex [Nouns | Verbs];
 
 compose net;
 
 apply down < dharumbal-upper.txt;
-#apply up < dharumbal-lower.txt;
+apply up < dharumbal-lower.txt;
 
 
 
 #source dharumbal.script
-#kasus hängt manchmal an adj -> nicht beachtet
-#erginstr: wenn was in klammern dann beide optionen
-#nominativ: vok. nicht stimmig zw. autorin und holmer -> weggelassen
-#akkusativ: nicht immer non-human vs. human
-#kausativ: alle 5 formen aber eig variation
-
-#1-2 Bsp pro Regel
-
-#rule count: 17 für nouns
-# 18 für verbs
-
-#beispiele im Text
-#lower words	
-#tabulator
-#alle formen auch bei closed
-#überprüfen
