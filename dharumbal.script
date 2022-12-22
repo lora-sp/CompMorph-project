@@ -72,10 +72,9 @@ read regex ErgInstrRU .o. ErgInstrNGU .o. ErgInstrNGGU
 
 define Rules;
 
-#read lexc < dharumbal-lex.txt;
-read lexc < testlex.txt;
+read lexc < lex-nouns.txt;
 define Nouns;
-read lexc < testlex2.txt;
+read lexc < lex-verbs.txt;
 define Verbs;
 
 read regex Rules;

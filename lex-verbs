@@ -7,6 +7,7 @@ LEXICON Root
 	Verbs;
 
 LEXICON Verbs
+
 dha	DhaClass;
 ma	NClass;
 bu	MClass;
