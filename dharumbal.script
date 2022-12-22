@@ -74,6 +74,7 @@ define Rules;
 
 read lexc < lex-nouns.txt;
 define Nouns;
+
 read lexc < lex-verbs.txt;
 define Verbs;
 
@@ -84,7 +85,6 @@ compose net;
 
 apply down < dharumbal-upper.txt;
 apply up < dharumbal-lower.txt;
-
 
 
 #source dharumbal.script
