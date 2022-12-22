@@ -75,19 +75,30 @@ bungga+Imper
 
 #Closed Classes
 #DhaClass
+dha+CJ+NonPast
 dha+CJ+Past
 dha+CJ+Imper
 dha+Imper
 
 #NClass
+ma+CJ+NonPast
+ma+CJ+Past
 ma+CJ+Purp
+ma+CJ+Imper
 
 #MClass
+bu+NonPast
+bu+CJ+Past
 bu+CJ+Imper
 
 #NG1Class
+ga+NonPast
+ga+CJ+Past
 ga+Purp
 ga+Imper
 
 #NG2Class
+wu+NonPast
+wu+CJ+Past
+wu+Purp
 wu+Imper
