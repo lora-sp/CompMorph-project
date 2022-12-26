@@ -8,7 +8,7 @@ gatharr+ErgInstr
 dadhim+ErgInstr
 gawun+ErgInstr
 dhalanh+ErgInstr
-binang+ErgInstr
+nharring+ErgInstr
 
 #Nom
 dhugurr+Nom

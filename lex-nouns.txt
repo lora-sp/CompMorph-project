@@ -12,7 +12,7 @@ gatharr	Case;
 dadhim	Case;
 gawun	Case;
 dhalanh	Case;
-binang	Case;
+nharring	Case;
 dhugurr	Case;
 bina	Case;
 guya	Case;
