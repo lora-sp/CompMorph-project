@@ -67,8 +67,6 @@ dhakarr+Imper
 #LClass
 bungga+CJ+NonPast
 bungga+CJ+Past
-bungga+Reci+Past
-bungga+Refl+Past
 bungga+CJ+FarPast
 bungga+CJ+Purp
 bungga+Imper
@@ -92,13 +90,20 @@ bu+CJ+Past
 bu+CJ+Imper
 
 #NG1Class
-ga+NonPast
-ga+CJ+Past
-ga+Purp
-ga+Imper
+wa+NonPast
+wa+CJ+Past
+wa+Purp
+wa+Imper
+wa+Intr+NonPast
 
 #NG2Class
 wu+NonPast
 wu+CJ+Past
 wu+Purp
 wu+Imper
+
+#Reflexive
+batha+Refl+Past
+
+#Reciprocal
+nha+Reci+NonPast

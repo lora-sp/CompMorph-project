@@ -75,9 +75,6 @@ dhakarrga
 #LClass
 bunggal
 bunggali
-bunggalangi
-bunggabangi
-bunggalingi
 bunggalgun
 bunggalgu
 bungga
@@ -102,16 +99,24 @@ bumi
 buma
 
 #NG1Class
-ganh
-gangi
-gagu
-gayu
-gayayu
-gaga
-ganga
+wanh
+wangi
+wagu
+wayu
+wayayu
+waga
+wanga
+wanginh
 
 #NG2Class
 wunh
 wungi
 wuthayu
 wuka
+
+#Reflexive
+bathalingi
+
+#Reciprocal
+nhabanh
+nhalanh

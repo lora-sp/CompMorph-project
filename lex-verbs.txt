@@ -4,22 +4,29 @@ LEXICON Root
 	Verbs;
 
 LEXICON Verbs
-bunda DerivZeroToL;
-dhakarr RRClass; !rr kein teil des suffix
-bungga DerivLToZero;
+bunda	Deriv1;
+dhakarr	RRClass; 
+bungga	LClass;
 dha	DhaClass;
 ma	NClass;
 bu	MClass;
-ga	NG1Class;
+wa	Deriv2;
 wu	NG2Class;
+batha	Deriv3;
+nha	Deriv4;
 
-LEXICON DerivZeroToL
+LEXICON Deriv1
 	ZeroClass;
 +Caus:Ea	LClass;
 
-LEXICON DerivLToZero
-	LClass;
+LEXICON Deriv2
+	NG1Class;
++Intr:ngi	NG1Class;
+
+LEXICON Deriv3
 +Refl:li	ZeroClass;
+
+LEXICON Deriv4
 +Reci:Fa	ZeroClass;
 
 LEXICON ZeroClass
@@ -38,14 +45,13 @@ LEXICON RRClass
 
 LEXICON LClass
 +CJ:l	LTenseMood;
-+Imper:ga	#;
++Imper:0	#;
 
 LEXICON LTenseMood
 +NonPast:0	#;
 +Past:i	#;
 +FarPast:gun	#;
 +Purp:gu	#;
-+Imper:a	#;
 
 LEXICON DhaClass
 +Imper:ga	#;
